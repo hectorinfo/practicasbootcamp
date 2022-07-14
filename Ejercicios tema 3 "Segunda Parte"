@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Coche Micoche = new Coche();
-        System.out.println("Numero de puertas inicial:" + Micoche.npuertas);
-        Micoche.spuertas();
-        System.out.println("Numero de Puertas luego de incremento: " + Micoche.npuertas);
+        Coche micoche = new Coche();
+        System.out.println("El numero de puertas es: " +  micoche.npuertas);
+        micoche.sumarp();
     }
-    public static class Coche {
-        int npuertas = 5;
-
-        public void spuertas (){
+}
+public class Coche {
+    int npuertas = 5;
+    public void sumarp (){
         this.npuertas++;
-        }
+        System.out.print("El numero de puertas incrementadas: " + this.npuertas);
     }
 }
