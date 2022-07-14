@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        int v1;
+        int v2;
+        int v3;
+        System.out.print("Primer valor: ");
+        v1 = Integer.parseInt(System.console().readLine());
+        System.out.print("Segundo valor: ");
+        v2 = Integer.parseInt(System.console().readLine());
+        System.out.println("Tercer valor: ");
+        v3 = Integer.parseInt(System.console().readLine());
+
+        suma(v1, v2, v3);
+    }
+    public static void suma (int a, int b, int c){
+        System.out.println("El resultado de la suma es: " +  (a + b + c));
+    }
+}
