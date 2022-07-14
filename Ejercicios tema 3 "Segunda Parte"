@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Coche Micoche = new Coche();
+        System.out.println("Numero de puertas inicial:" + Micoche.npuertas);
+        Micoche.spuertas();
+        System.out.println("Numero de Puertas luego de incremento: " + Micoche.npuertas);
+    }
+    public static class Coche {
+        int npuertas = 5;
+
+        public void spuertas (){
+        this.npuertas++;
+        }
+    }
+}
